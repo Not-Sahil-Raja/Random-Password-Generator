@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="landing-page">
+      <div class="text-area">
+        <h3>PASSWORD GENERATOR TOOL</h3>
+        <h1>Need a Unique, Secure Password?</h1>
+        <h2>
+          Generate and autofill credentials across all your devices with
+          SecPass.
+        </h2>
+        <a href="#randomPassword-container">Use Password Generator</a>
+      </div>
+      <div class="img-bg">
+        <img
+          src="https://i.pinimg.com/originals/f7/61/3c/f7613cabf85632929fb9612a47f3dfe3.gif"
+          alt=""
+          srcset=""
+        />
+      </div>
+    </div>
+
+    <div id="randomPassword-container" class="main-container">
+      <h1>
+        Instantly generate a secure, random password with the SecPass online
+        tool
+      </h1>
+      <p>
+        All your passwords are automatically generated and synced – wherever you
+        go.
+      </p>
+      <div class="displayPass">
+        <input type="text" id="display" placeholder="Generated Password" />
+        <i class="fa-regular fa-copy" style="color: #ffffff"></i>
+      </div>
+
+      <div class="cntrlPass">
+        <p>Customize Your Password</p>
+
+        <div class="controls">
+          <div class="col-1">
+            <span>Password Length</span>
+            <div class="len">
+              <input
+                type="number"
+                id="passLen"
+                placeholder="PassWord Length"
+                value="8"
+                min="1"
+                max="20"
+                class="inputText"
+              />
+              <input
+                type="range"
+                id="passLenSlider"
+                value="8"
+                min="1"
+                max="20"
+                class="inputSlider"
+              />
+            </div>
+          </div>
+
+          <div class="col-2">
+            <div>
+              <input
+                type="checkbox"
+                name=""
+                id="checkNum"
+                value
+                value="true"
+                checked
+                onclick="removeNum()"
+              /><span>Allow Numbers</span>
+            </div>
+            <div>
+              <input
+                type="checkbox"
+                name=""
+                id="checkSymbols"
+                value="true"
+                unchecked
+                onclick="removeSymbol()"
+              /><span>Allow Symbols</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button id="generateButton" class="genrateBtn">Generate Again</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

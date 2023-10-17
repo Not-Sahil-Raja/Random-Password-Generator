@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Syne&family=Tenor+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(27, 27, 27);
+    color: white;
+    scroll-behavior: smooth;
+}
+.landing-page{
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(36, 36, 36);
+  padding: 3rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.text-area{
+  width: 50%;
+}
+.landing-page h3{
+  font-family: 'Archivo', sans-serif;
+  font-size: 1.2rem;
+  color: rgb(42, 126, 165);
+  margin-bottom: 1.5rem;
+}
+.landing-page h2{
+  font-family: 'Inter', sans-serif;
+  color: rgb(112, 150, 185);
+  margin-bottom: 2.5rem;
+}
+.landing-page h1{
+  font-family: 'Syne', sans-serif;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.landing-page a{
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.4rem;
+  color: antiquewhite;
+  font-weight: bolder;
+  background-color: rgb(29, 22, 22);
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 10px rgb(0, 0, 0) inset;
+  transition: all .5s ease-in-out;
+}
+.landing-page a:hover{
+  background-color: antiquewhite;
+  color: rgb(29, 22, 22);
+  font-weight: bold;
+}
+.img-bg img{
+  border-radius: 39% 61% 45% 55% / 52% 39% 61% 48% ;
+  transition: all .5s ease-in-out;
+}
+.img-bg img:hover{
+  border-radius: 67% 33% 68% 32% / 49% 39% 61% 51%  ;
+}
+
+.main-container{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  align-items: center;
+  text-align: center;
+}
+.main-container h1{
+  font-family: 'Syne', sans-serif;
+  width: 50%;
+  margin-bottom: .2vw;
+}
+.main-container p{
+  font-family: 'Inter', sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 8vw;
+  color: rgb(201, 201, 200);
+}
+
+.displayPass{
+  background-color: rgb(44, 44, 44);
+  padding: 1rem 1rem;
+  border-radius: 1rem 1rem .2rem .1rem ;
+  width: 45vw;
+  border-bottom: 5px solid white;
+  box-shadow: 2px 2px 10px rgb(0, 0, 0);
+}
+.displayPass input{
+  width: 80%;
+  outline: none;
+  background-color:transparent;
+  font-weight: bold;
+  border: none;
+  font-size: 1.5rem;
+  color: rgb(254, 255, 240);
+  font-family: 'Syne', sans-serif;
+}
+.displayPass i{
+  font-size: 1.5rem;
+  cursor:pointer;
+}
+
+.cntrlPass{
+  background-color: rgb(19, 19, 19);
+  width: 45vw;
+  margin: 2rem;
+  height: 35vh;
+  border-radius: .3rem;
+  box-shadow: 2px 2px 10px rgb(0, 0, 0);
+}
+
+.cntrlPass p{
+  font-family: 'Syne', sans-serif;
+  font-size: 1.5rem;
+  padding: .7rem;
+  font-weight: bold;
+  border-bottom: 5px solid rgba(245, 222, 179, 0.253);
+  margin-bottom: 1vw;
+}
+
+.controls{
+  display: flex;
+  flex-direction: row;
+  padding: 1.2rem;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 1vw;
+}
+
+.col-1{
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+  align-items: start;
+  padding: 0 1rem;
+  width: 100%;
+  
+}
+
+.col-1 span{
+  font-family: 'Inter', sans-serif;
+  margin-bottom: 1vw;
+}
+.len{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:1vw;
+}
+.inputText{
+  outline: none;
+  width: 30%;
+  padding: 10px;
+  background-color: transparent;
+  color: wheat;
+  font-family: 'Syne', sans-serif;
+  font-weight: bold;
+  font-size: 1.3rem;
+  border: 2px solid white;
+  border-radius: .3rem;
+  
+}
+.len input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.col-2{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Syne', sans-serif;
+  font-size: 1.1rem;
+}
+.col-2 div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: .5vw .5vw;
+}
+.col-2 div input{
+  margin-right: 1rem;
+}
+
+.genrateBtn{
+  margin-bottom: 10vw;
+  padding: 1vw 3vw;
+  border-radius: .5rem;
+  border: none;
+  font-size: 1rem;
+  font-family: 'Syne', sans-serif;
+  font-weight: bolder;
+  background-color: transparent;
+  color: wheat;
+  border: 2px solid wheat;
+  transition: all .2s ease-in-out;
+}
+.genrateBtn:hover{
+  background-color: rgb(44, 44, 44);
+}
+.genrateBtn:active{
+  background-color: wheat;
+  color: rgb(29, 29, 29);
+}
+/* font-family: 'Inter', sans-serif;
+
+font-family: 'Tenor Sans', sans-serif; */
