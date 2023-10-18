@@ -4,9 +4,10 @@ let display = document.querySelector("#display");
 let checkNum = document.querySelector("#checkNum");
 let checkSymbols = document.querySelector("#checkSymbols");
 let generateButton = document.querySelector("#generateButton");
+let copiedTxt = document.querySelector("#copiedTxt");
 let allChar =
   "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!@#$%^&*()_0123456789";
-let copy = document.querySelector(".fa-copy");
+let copy = document.querySelector("#copyBtn");
 
 let changePassword = () => {
   let password = "";
@@ -55,4 +56,14 @@ generateButton.addEventListener("click", () => {
 //copy button
 copy.addEventListener("click", () => {
   navigator.clipboard.writeText(display.value);
+  copy.classList.remove("fa-regular");
+  copy.classList.add("fa-solid");
+  copiedTxt.classList.remove("copied");
+  copiedTxt.classList.add("copied-visible");
+  setTimeout(() => {
+    copy.classList.remove("fa-solid");
+    copy.classList.add("fa-regular");
+    copiedTxt.classList.add("copied");
+    copiedTxt.classList.remove("copied-visible");
+  }, 2000);
 });
